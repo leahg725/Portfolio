@@ -98,9 +98,15 @@ footer {
 }
 .Intro {
   padding: 0 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   text-align: center;
   min-height: 100vh;
 }
@@ -128,8 +134,12 @@ footer {
   margin-top: 15px;
 }
 .Navigation-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   list-style-type: none;
   padding-left: 0;
   font-family: 'Open Sans', sans-serif;
@@ -144,6 +154,7 @@ footer {
   text-decoration: none;
   padding: 0 15px;
   position: relative;
+  -webkit-transition: all 0.3s;
   transition: all 0.3s;
 }
 .Navigation-link:after {
@@ -155,8 +166,8 @@ footer {
   top: -5px;
   bottom: -5px;
   height: calc(110%);
-  height: -moz-calc(110%);
   height: -webkit-calc(110%);
+  -webkit-transition: all 0.3s;
   transition: all 0.3s;
   z-index: -1;
 }
@@ -166,8 +177,6 @@ footer {
 }
 .Navigation-link:hover:after,
 .Navigation-link:focus:after {
-  width: -webkit-calc(100%);
-  width: -moz-calc(100%);
   width: calc(100%);
 }
 .Intro-contact_info {
@@ -246,7 +255,8 @@ figure {
  * 2. Show the overflow in Edge and IE.
  */
 hr {
-  box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
   /* 1 */
   height: 0;
   /* 1 */
@@ -284,7 +294,8 @@ abbr[title] {
   /* 1 */
   text-decoration: underline;
   /* 2 */
-  text-decoration: underline dotted;
+  -webkit-text-decoration: underline dotted;
+          text-decoration: underline dotted;
   /* 2 */
 }
 /**
@@ -445,7 +456,8 @@ button:-moz-focusring,
  *    `fieldset` elements in all browsers.
  */
 legend {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   /* 1 */
   color: inherit;
   /* 2 */
@@ -480,7 +492,8 @@ textarea {
  */
 [type="checkbox"],
 [type="radio"] {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   /* 1 */
   padding: 0;
   /* 2 */
@@ -574,7 +587,8 @@ th {
 *,
 *:before,
 *:after {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 .Skills {
   padding-top: 40px;
@@ -625,8 +639,12 @@ th {
   background-color: #0C1713;
 }
 .Skills-circles_wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 .Skill-circle {
   position: relative;
@@ -638,13 +656,15 @@ th {
   margin-left: 15px;
   margin-right: 15px;
   cursor: default;
+  -webkit-transition: all 0.3s;
   transition: all 0.3s;
 }
 .Skill-circle span {
   font-size: 18px;
   font-family: 'Open Sans Condensed', sans-serif;
   width: 100%;
-  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
   position: absolute;
   top: 50%;
   left: 50%;
@@ -783,11 +803,13 @@ ol li {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
 }
 .Work-item_hover {
   background: rgba(0, 0, 0, 0.4);
   opacity: 0;
+  -webkit-transition: all 0.3s;
   transition: all 0.3s;
   position: absolute;
   width: 100%;
@@ -799,7 +821,8 @@ ol li {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
   background-color: #FFFFFF;
   color: #CBF3D2;
   border-radius: 100%;

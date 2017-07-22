@@ -4,6 +4,7 @@ var less = require('gulp-less');
 var plumber = require('gulp-plumber');
 var watch = require('gulp-watch');
 var notify = require('gulp-notify');
+var autoprefixer = require('gulp-autoprefixer');
 
 gulp.task('less', function() {
     return gulp.src('./less/**/*.less')
@@ -18,6 +19,10 @@ gulp.task('less', function() {
             }
         }))
         .pipe(less())
+        .pipe(autoprefixer({
+            "browsers": ['IE 8', '> 1%', 'last 2 versions', 'Firefox ESR', 'Opera 12.1'],
+            "remove": true
+        }))
         .pipe(gulp.dest('./dist/styles'))
         .pipe(notify({
             "title": "Stylesheets compiled.",
