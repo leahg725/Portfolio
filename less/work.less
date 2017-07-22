@@ -1,17 +1,18 @@
 .Work {
+    .section-padding();
 }
 
 .Work-wrapper {
-    .col-with_margins(8; min; @vp-sm);
-    .col-with_margins--offset(2; min; @vp-sm);
+    //.col-with_margins(8; min; @vp-sm);
+    //.col-with_margins--offset(2; min; @vp-sm);
 }
 
 .Work-item {
-    .col-with_margins(6; min; @vp-sm);
+    .col-with_margins(4; min; @vp-sm);
     background-color: red;
     margin-top: 30px;
     position: relative;
-    &:first-child, &:nth-child(2) {
+    &:first-child, &:nth-child(2), &:nth-child(3) {
         margin-top: 0;
     }
     &:before {
