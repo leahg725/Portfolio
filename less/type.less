@@ -1,0 +1,58 @@
+@font-family: 'Open Sans', sans-serif;
+@font-family_condensed: 'Open Sans Condensed', sans-serif;
+@font-family_heading: 'Dancing Script', cursive;
+
+h1 {
+    font-family: @font-family_heading;
+    @media (min-width: @vp-md) {
+        font-size: 95px;
+    }
+}
+
+h2 {
+    font-family: @font-family;
+    @media (min-width: @vp-md) {
+        font-size: 30px;
+    }
+}
+
+h3 {
+    font-family: @font-family_heading;
+    color: @purple;
+    @media (min-width: @vp-md) {
+        font-size: 65px;
+    }
+}
+
+.p {
+    font-size: 14px;
+    @media (min-width: @vp-sm) {
+        font-size: 16px;
+    }
+}
+
+.p-small() {
+    font-size: 12px;
+    @media (min-width: @vp-sm) {
+        font-size: 14px;
+    }
+}
+
+.p-large() {
+    font-size: 18px;
+    @media (min-width: @vp-sm) {
+        font-size: 20px;
+    }
+}
+
+ul, ol {
+    font-family: @font-family;
+    li {
+        .p;
+    }
+}
+
+.reset-list {
+    list-style-type: none;
+    padding-left: 0;
+}
