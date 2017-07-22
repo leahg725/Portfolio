@@ -7,7 +7,7 @@ var notify = require('gulp-notify');
 var autoprefixer = require('gulp-autoprefixer');
 
 gulp.task('less', function() {
-    return gulp.src('["./*.less"]')
+    return gulp.src('./less/*.less')
         .pipe(concat('master.css'))
         .pipe(plumber({
             errorHandler: function (err) {
@@ -31,7 +31,7 @@ gulp.task('less', function() {
 });
 
 gulp.task('watch:less', function () {
-    return gulp.watch('./*.less', ["less"]);
+    return gulp.watch('./less/*.less', ["less"]);
 });
 
 
