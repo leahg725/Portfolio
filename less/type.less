@@ -1,13 +1,21 @@
-@font-family: 'Open Sans', sans-serif;
-@font-family_condensed: 'Open Sans Condensed', sans-serif;
-@font-family_heading: 'Dancing Script', cursive;
+@font-family_open-sans: 'Open Sans', sans-serif;
+@font-family_open-sans-condensed: 'Open Sans Condensed', sans-serif;
+@font-family_dancing-script: 'Dancing Script', cursive;
+@font-family_pacifico: 'Pacifico', cursive;
+@font-family_arimo: 'Arimo', sans-serif;
+
 @font-weight_bold: 700;
 @font-weight_semibold: 500;
+@font-weight_normal: 400;
+
+@font-family_heading: @font-family_pacifico;
+@font-family: @font-family_arimo;
 
 h1 {
     font-family: @font-family_heading;
+    font-weight: @font-weight_normal;
     @media (min-width: @vp-md) {
-        font-size: 80px;
+        font-size: 60px;
     }
 }
 
