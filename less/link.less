@@ -5,4 +5,24 @@
 .link-primary() {
     color: @purple;
     font-size: 16px;
+    transition: color 0.3s;
+    display: inline-block;
+    position: relative;
+    &:after {
+        content: '';
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        height: 2px;
+        width: 0;
+        background-color: @purple;
+        bottom: -5px;
+        transition: 0.5s all ease;
+
+    }
+    &:hover, &:focus {
+        &:after {
+            width: 100%;
+        }
+    }
 }

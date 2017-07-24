@@ -60,9 +60,18 @@
   padding-right: 15px;
   padding-top: 40px;
   padding-bottom: 40px;
-  background-color: #CBF3D2;
+  background-color: #F1F0FF;
   text-align: center;
   clear: both;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 @media (min-width: 768px) {
   .Footer {
@@ -73,6 +82,7 @@
 .Footer-copyright {
   font-size: 14px;
   font-family: 'Arimo', sans-serif;
+  margin: 0;
 }
 @media (min-width: 768px) {
   .Footer-copyright {
@@ -88,6 +98,39 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  margin: 0 -15px;
+}
+.Footer-social_item {
+  margin: 0 15px;
+}
+.Footer-social_item a {
+  text-decoration: none;
+  color: #8C489F;
+  font-size: 16px;
+  -webkit-transition: color 0.3s;
+  transition: color 0.3s;
+  display: inline-block;
+  position: relative;
+}
+.Footer-social_item a:after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  height: 2px;
+  width: 0;
+  background-color: #8C489F;
+  bottom: -5px;
+  -webkit-transition: 0.5s all ease;
+  transition: 0.5s all ease;
+}
+.Footer-social_item a:hover:after,
+.Footer-social_item a:focus:after {
+  width: 100%;
+}
+.Footer-social_item a:before {
+  font-size: 25px;
 }
 .no-margin {
   margin-left: 0;
@@ -98,7 +141,7 @@
   margin-bottom: 0;
 }
 .Content {
-  background-color: #802392;
+  background-color: #8C489F;
   height: 100vh;
 }
 .Content-container {
@@ -164,7 +207,7 @@
 .Intro-image {
   width: 100%;
   height: auto;
-  border: 3px solid #CBF3D2;
+  border: 3px solid #C3C3E5;
   border-radius: 100%;
 }
 .Intro-content_wrapper {
@@ -206,6 +249,7 @@
 .Navigation {
   padding-top: 30px;
   padding-bottom: 30px;
+  margin: 0 -15px;
 }
 @media (min-width: 768px) {
   .Navigation {
@@ -217,9 +261,6 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   list-style-type: none;
   padding-left: 0;
   font-family: 'Open Sans', sans-serif;
@@ -238,9 +279,9 @@
   transition: all 0.3s;
 }
 .Navigation-link {
-  border: 3px solid #CBF3D2;
+  border: 3px solid #8C489F;
   padding: 15px 30px;
-  background-color: #FFFFFF;
+  background-color: #8C489F;
   position: relative;
   overflow: hidden;
   z-index: 1;
@@ -250,7 +291,7 @@
 }
 .Navigation-link:before {
   content: '';
-  background-color: #CBF3D2;
+  background-color: #F1F0FF;
   height: 100%;
   width: 100%;
   position: absolute;
@@ -261,11 +302,15 @@
 }
 .Navigation-link span {
   display: block;
-  color: #0C1713;
+  color: #FFFFFF;
   position: relative;
   z-index: 1;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
+}
+.Navigation-link:hover,
+.Navigation-link:focus {
+  border-color: #F1F0FF;
 }
 .Navigation-link:hover span,
 .Navigation-link:focus span {
@@ -287,25 +332,51 @@
 }
 .Intro-contact_link {
   text-decoration: none;
-  color: #802392;
+  color: #8C489F;
   font-size: 16px;
+  -webkit-transition: color 0.3s;
+  transition: color 0.3s;
+  display: inline-block;
+  position: relative;
   margin: 0 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
-.Intro-contact_link span:before {
+.Intro-contact_link:after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  height: 2px;
+  width: 0;
+  background-color: #8C489F;
+  bottom: -5px;
+  -webkit-transition: 0.5s all ease;
+  transition: 0.5s all ease;
+}
+.Intro-contact_link:hover:after,
+.Intro-contact_link:focus:after {
+  width: 100%;
+}
+.Intro-contact_link i:before {
   font-size: 20px;
   margin-right: 5px;
-  vertical-align: middle;
 }
 .Intro-contact_link--separator {
   height: 20px;
   width: 2px;
-  background-color: #802392;
+  background-color: #8C489F;
 }
 .Intro-resume_link {
   text-decoration: none;
-  border: 3px solid #CBF3D2;
+  border: 3px solid #8C489F;
   padding: 15px 30px;
-  background-color: #FFFFFF;
+  background-color: #8C489F;
   position: relative;
   overflow: hidden;
   z-index: 1;
@@ -315,7 +386,7 @@
 }
 .Intro-resume_link:before {
   content: '';
-  background-color: #CBF3D2;
+  background-color: #F1F0FF;
   height: 100%;
   width: 100%;
   position: absolute;
@@ -326,11 +397,15 @@
 }
 .Intro-resume_link span {
   display: block;
-  color: #0C1713;
+  color: #FFFFFF;
   position: relative;
   z-index: 1;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
+}
+.Intro-resume_link:hover,
+.Intro-resume_link:focus {
+  border-color: #F1F0FF;
 }
 .Intro-resume_link:hover span,
 .Intro-resume_link:focus span {
@@ -584,7 +659,7 @@ h2 {
 }
 h3 {
   font-family: 'Pacifico', cursive;
-  color: #802392;
+  color: #8C489F;
 }
 @media (min-width: 992px) {
   h3 {
@@ -660,12 +735,33 @@ ol li {
 }
 .Work-item_link {
   text-decoration: none;
-  color: #802392;
+  color: #8C489F;
   font-size: 16px;
+  -webkit-transition: color 0.3s;
+  transition: color 0.3s;
+  display: inline-block;
+  position: relative;
   position: absolute;
   top: 0;
   left: 0;
   height: 100%;
+  width: 100%;
+}
+.Work-item_link:after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  height: 2px;
+  width: 0;
+  background-color: #8C489F;
+  bottom: -5px;
+  -webkit-transition: 0.5s all ease;
+  transition: 0.5s all ease;
+}
+.Work-item_link:hover:after,
+.Work-item_link:focus:after {
   width: 100%;
 }
 .Work-item_link:hover .Work-item_hover,
@@ -697,8 +793,7 @@ ol li {
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
   background-color: #FFFFFF;
-  color: #CBF3D2;
+  color: #8C489F;
   border-radius: 100%;
   padding: 15px;
 }
-/*@import 'font-awesome/less/font-awesome.less';*/

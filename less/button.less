@@ -7,9 +7,9 @@
 }
 
 .button-primary() {
-    border: 3px solid @mint;
+    border: 3px solid @purple;
     padding: 15px 30px;
-    background-color: @white;
+    background-color: @purple;
     position: relative;
     overflow: hidden;
     z-index:1;
@@ -18,7 +18,7 @@
     letter-spacing: 1px;
     &:before {
         content: '';
-        background-color: @mint;
+        background-color: @lighter-purple;
         height: 100%;
         width: 100%;
         position: absolute;
@@ -28,12 +28,13 @@
     }
     span {
         display: block;
-        color: @black;
+        color: @white;
         position: relative;
         z-index: 1;
         transition: all 0.3s;
     }
     &:hover, &:focus {
+        border-color: @lighter-purple;
         span {
             color: @black;
         }

@@ -13,7 +13,7 @@
 .Intro-image {
     width: 100%;
     height: auto;
-    border: 3px solid @mint;
+    border: 3px solid @light-purple;
     border-radius: 100%;
 }
 
@@ -37,11 +37,11 @@
 
 .Navigation {
     .section-padding(@pt: 30px; @pb: 30px; @ptbp: 30px; @pbbp: 30px);
+    margin: 0 -15px;
 }
 
 .Navigation-list {
     display: flex;
-    justify-content: center;
     list-style-type: none;
     padding-left: 0;
     font-family: 'Open Sans', sans-serif;
@@ -76,11 +76,12 @@
     .link-revert();
     .link-primary();
     margin: 0 15px;
-    span {
+    display: flex;
+    align-items: center;
+    i {
         &:before {
             font-size: 20px;
             margin-right: 5px;
-            vertical-align: middle;
         }
     }
 }
