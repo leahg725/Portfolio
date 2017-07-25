@@ -225,50 +225,48 @@
 }
 .Intro-contact_info {
   padding-top: 50px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  text-align: center;
   margin: 0 -15px;
 }
 .Intro-contact_link {
   text-decoration: none;
-  color: #FF0000;
-  font-size: 18px;
-  -webkit-transition: color 0.5s;
-  transition: color 0.5s;
   display: inline-block;
+  overflow: hidden;
   position: relative;
-  margin: 0 15px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  background-color: #CDFFFF;
+  color: #FF0000;
+  padding: 15px;
+  border-radius: 5px;
+  border: 2px dashed #FF0000;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
 }
-.Intro-contact_link:after {
-  content: '';
+.Intro-contact_link i {
   position: absolute;
-  left: 50%;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
-  height: 2px;
-  width: 0;
-  background-color: #4FD5D6;
-  bottom: -5px;
-  -webkit-transition: 0.5s all ease;
-  transition: 0.5s all ease;
+  -webkit-transform: translate(-45px, 25px);
+          transform: translate(-45px, 25px);
+  display: inline-block;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+.Intro-contact_link span {
+  display: inline-block;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
 }
 .Intro-contact_link:hover,
 .Intro-contact_link:focus {
-  color: #4FD5D6;
+  padding-right: 35px;
 }
-.Intro-contact_link:hover:after,
-.Intro-contact_link:focus:after {
-  width: 100%;
+.Intro-contact_link:hover span,
+.Intro-contact_link:focus span {
+  -webkit-transform: translateX(25px);
+          transform: translateX(25px);
+}
+.Intro-contact_link:hover i,
+.Intro-contact_link:focus i {
+  -webkit-transform: translate(0px, 0px);
+          transform: translate(0px, 0px);
 }
 .Intro-contact_link i:before {
   font-size: 20px;
@@ -281,46 +279,43 @@
 }
 .Intro-resume_link {
   text-decoration: none;
-  border: 3px solid #4FD5D6;
-  padding: 15px 30px;
-  background-color: #4FD5D6;
-  position: relative;
-  overflow: hidden;
-  z-index: 1;
   display: inline-block;
-  font-weight: 700;
-  letter-spacing: 1px;
+  overflow: hidden;
+  position: relative;
+  background-color: #CDFFFF;
+  color: #FF0000;
+  padding: 15px;
+  border-radius: 5px;
+  border: 2px dashed #FF0000;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
 }
-.Intro-resume_link:before {
-  content: '';
-  background-color: #4FD5D6;
-  height: 100%;
-  width: 100%;
+.Intro-resume_link i {
   position: absolute;
-  top: 0;
-  left: -100%;
-  -webkit-transition: all 0.3s;
-  transition: all 0.3s;
+  -webkit-transform: translate(-45px, 25px);
+          transform: translate(-45px, 25px);
+  display: inline-block;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
 }
 .Intro-resume_link span {
-  display: block;
-  color: #FFFFFF;
-  position: relative;
-  z-index: 1;
-  -webkit-transition: all 0.3s;
-  transition: all 0.3s;
+  display: inline-block;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
 }
 .Intro-resume_link:hover,
 .Intro-resume_link:focus {
-  border-color: #4FD5D6;
+  padding-right: 35px;
 }
 .Intro-resume_link:hover span,
 .Intro-resume_link:focus span {
-  color: #0C1713;
+  -webkit-transform: translateX(25px);
+          transform: translateX(25px);
 }
-.Intro-resume_link:hover:before,
-.Intro-resume_link:focus:before {
-  left: 0;
+.Intro-resume_link:hover i,
+.Intro-resume_link:focus i {
+  -webkit-transform: translate(0px, 0px);
+          transform: translate(0px, 0px);
 }
 .link-home {
   font-family: 'Pacifico', cursive;

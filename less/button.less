@@ -1,45 +1,38 @@
 .button-revert {
     background: transparent;
     border-width: 0px;
-
     appearance: none;
     padding: 0;
 }
 
 .button-primary() {
-    border: 3px solid @teal;
-    padding: 15px 30px;
-    background-color: @teal;
-    position: relative;
-    overflow: hidden;
-    z-index:1;
     display: inline-block;
-    font-weight: @font-weight_bold;
-    letter-spacing: 1px;
-    &:before {
-        content: '';
-        background-color: @teal;
-        height: 100%;
-        width: 100%;
+    overflow: hidden;
+    position: relative;
+    background-color: @light-teal;
+    color: @red;
+    padding: 15px;
+    border-radius: 5px;
+    border: 2px dashed @red;
+    transition: all 0.5s;
+    i {
         position: absolute;
-        top: 0;
-        left: -100%;
-        transition: all 0.3s;
+        transform: translate(-45px, 25px);
+        display: inline-block;
+        transition: all 0.5s;
     }
     span {
-        display: block;
-        color: @white;
-        position: relative;
-        z-index: 1;
-        transition: all 0.3s;
+        display: inline-block;
+        transition: all 0.5s;
     }
     &:hover, &:focus {
-        border-color: @teal;
+        padding-right: 35px;
         span {
-            color: @black;
+            transform: translateX(25px);
         }
-        &:before {
-            left: 0;
+        i {
+            //opacity: 1;
+            transform: translate(0px, 0px);
         }
     }
 }
