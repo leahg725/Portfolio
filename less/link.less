@@ -2,10 +2,10 @@
     text-decoration: none;
 }
 
-.link-primary() {
-    color: @purple;
-    font-size: 16px;
-    transition: color 0.3s;
+.link-primary(@color: @red; @size: 18px; @hover_color: @teal; @pseudo_color: @teal) {
+    color: @color;
+    font-size: @size;
+    transition: color 0.5s;
     display: inline-block;
     position: relative;
     &:after {
@@ -15,12 +15,38 @@
         transform: translateX(-50%);
         height: 2px;
         width: 0;
-        background-color: @purple;
+        background-color: @pseudo_color;
         bottom: -5px;
         transition: 0.5s all ease;
-
     }
     &:hover, &:focus {
+        color: @hover_color;
+        &:after {
+            width: 100%;
+        }
+    }
+}
+
+.link-home {
+    font-family: @font-family_heading;
+    color: @red;
+    font-size: 24px;
+    transition: color 0.5s;
+    display: inline-block;
+    position: relative;
+    &:after {
+        content: '';
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        height: 2px;
+        width: 0;
+        background-color: @teal;
+        bottom: -5px;
+        transition: 0.5s all ease;
+    }
+    &:hover, &:focus {
+        color: @teal;
         &:after {
             width: 100%;
         }

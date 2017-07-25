@@ -1,11 +1,11 @@
-.underline(@mt: 5px) {
+.underline(@mt: 5px; @bg: @white) {
     &:after {
         content: '';
         display: block;
         width: 50px;
         height: 2px;
-        margin: @mt 0 0 0;
-        background-color: @black;
+        margin: @mt auto 0 auto;
+        background-color: @bg;
     }
 }
 
@@ -45,27 +45,4 @@
         margin-top: @mtbp;
         margin-bottom: @mbbp;
     }
-}
-
-.Content {
-    background-color: @purple;
-    height: 100vh;
-}
-
-.Content-container {
-    .section-margin(@mtbp: 100px; @mbbp: 100px);
-    background-color: @white;
-    box-shadow: 0px 0px 36px -2px rgba(63,63,63,1);
-    height: 730px;
-    overflow-y: auto;
-}
-
-.Content-valign {
-    display: flex;
-    align-items: center;
-    height: 100%;
-}
-
-.Content-inner {
-    width: 100%;
 }

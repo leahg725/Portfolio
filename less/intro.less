@@ -3,23 +3,26 @@
     padding: 0 15px;
     display: flex;
     align-items: center;
+    background-color: @teal;
+    color: @white;
 }
 
 .Intro-image_wrapper{
-    .col-with_margins(3; min; @vp-sm);
-    .col-with_margins--offset(.5; min; @vp-sm);
+    .col-with_margins(2; min; @vp-sm);
+    .col-with_margins--offset(5; min; @vp-sm);
 }
 
 .Intro-image {
     width: 100%;
     height: auto;
-    border: 3px solid @light-purple;
+    border: 3px solid @red;
     border-radius: 100%;
 }
 
 .Intro-content_wrapper {
-    .col-with_margins(7; min; @vp-sm);
-    .col-with_margins--offset(.5; min; @vp-sm);
+    .col-with_margins(8; min; @vp-sm);
+    .col-with_margins--offset(2; min; @vp-sm);
+    text-align: center;
 }
 
 .Intro-heading {
@@ -32,37 +35,6 @@
     font-weight: 400;
     margin-top: 30px;
     margin-bottom: 0;
-    width: 90%;
-}
-
-.Navigation {
-    .section-padding(@pt: 30px; @pb: 30px; @ptbp: 30px; @pbbp: 30px);
-    margin: 0 -15px;
-}
-
-.Navigation-list {
-    display: flex;
-    list-style-type: none;
-    padding-left: 0;
-    font-family: 'Open Sans', sans-serif;
-    font-size: 18px;
-    margin-top: 30px;
-}
-
-.Navigation-list_item {
-    margin: 0 15px;
-}
-
-.Navigation-link {
-    color: #000000;
-    text-decoration: none;
-    padding: 0 15px;
-    position: relative;
-    transition: all 0.3s;
-}
-
-.Navigation-link {
-    .button-primary();
 }
 
 .Intro-contact_info {
@@ -89,7 +61,7 @@
 .Intro-contact_link--separator {
     height: 20px;
     width: 2px;
-    background-color: @purple;
+    background-color: @teal;
 }
 
 .Intro-resume_link {

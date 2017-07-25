@@ -5,7 +5,7 @@
 .col(@col-width; min; @min-bp: 0px; @margin_width: @margin_width; @float: left; @parent_width: 100%) {
     min-height: 1px;
 
-    @media (min-width: @min-breakpoint) {
+    @media (min-width: @min-bp) {
         float: @float;
         width: (@col-width / @columns * @parent_width);
     }
