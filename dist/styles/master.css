@@ -662,36 +662,76 @@ th {
           box-sizing: border-box;
 }
 .Resume {
-  *zoom: 1;
+  padding-top: 40px;
+  padding-bottom: 40px;
   color: #0C1713;
-}
-.Resume-left_col {
-  min-height: 1px;
-  background-color: #CDFFFF;
-  padding: 30px;
-  text-align: right;
+  background-color: #4FD5D6;
 }
 @media (min-width: 768px) {
-  .Resume-left_col {
-    float: left;
-    width: 25%;
+  .Resume {
+    padding-top: 80px;
+    padding-bottom: 80px;
   }
 }
-.Resume-left_col_title,
-.Resume-right_col_title {
+.Resume-title {
+  text-align: center;
+  margin: 0 15px 30px 15px;
+  color: #FFFFFF;
+}
+.Resume-section_wrapper {
+  min-height: 1px;
+}
+@media (min-width: 768px) {
+  .Resume-section_wrapper {
+    float: left;
+    width: 66.66666667%;
+  }
+}
+@media (min-width: 768px) {
+  .Resume-section_wrapper {
+    margin-left: 16.66666667%;
+  }
+}
+.Resume-column {
+  margin-left: 15px;
+  margin-right: 15px;
+  min-height: 1px;
+}
+@media (min-width: 768px) {
+  .Resume-column {
+    float: left;
+    width: 46.97580645%;
+    width: calc( 50% - 30px );
+  }
+}
+.Resume-column_title {
+  text-align: center;
+  font-size: 30px;
+  color: #FFFFFF;
+}
+.Resume-box:not(:first-child) {
+  margin-top: 30px;
+}
+.Resume-box_title_wrapper {
+  background-color: #CDFFFF;
+  padding: 30px 15px 15px 15px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+.Resume-box_title {
   font-weight: 700;
   margin: 0;
+  text-align: center;
 }
-.Resume-right_col {
-  min-height: 1px;
-  background-color: #4FD5D6;
-  padding: 30px;
+.Resume-box_info {
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  background-color: #FFFFFF;
+  padding: 15px 15px 30px 15px;
 }
-@media (min-width: 768px) {
-  .Resume-right_col {
-    float: left;
-    width: 75%;
-  }
+.Resume-grad_year {
+  font-style: italic;
+  font-weight: 700;
 }
 h1 {
   font-family: 'Pacifico', cursive;
@@ -720,11 +760,19 @@ h2 {
 }
 h3 {
   font-family: 'Pacifico', cursive;
-  color: #0C1713;
+  color: #4FD5D6;
 }
 @media (min-width: 992px) {
   h3 {
     font-size: 65px;
+  }
+}
+.h4 {
+  font-family: 'Arimo', sans-serif;
+}
+@media (min-width: 992px) {
+  .h4 {
+    font-size: 30px;
   }
 }
 .p {
@@ -822,7 +870,6 @@ ol li {
   opacity: 0;
 }
 .Work-item_name {
-  font-size: 30px;
   text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.75);
   opacity: 1;
   -webkit-transition: opacity 0.3s;
