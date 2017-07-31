@@ -5,54 +5,44 @@
 }
 
 .Resume-title {
+    color: @white;
+    text-align: center;
+}
+
+.Resume-row_title {
     text-align: center;
     margin: 0 15px 30px 15px;
-    color: @white;
+    color: @black;
 }
 
 .Resume-section_wrapper {
-    .col(8; min; @vp-sm);
-    .col-offset(2; min; @vp-sm);
+    .col(10; min; @vp-sm);
+    .col-offset(1; min; @vp-sm);
+    .section-padding(@ptbp: 40px; @pbbp: 40px);
+    background-color: @white;
 }
 
-.Resume-column {
-    .col-with_margins(6; min; @vp-sm);
+.Resume-title_column {
+    .col(3; min; @vp-sm);
+}
+
+.Resume-column_title_wrapper {
+    text-align: right;
+    font-size: 18px;
+    color: @black;
+}
+
+.Resume-info_column {
+    .col(8; min; @vp-sm);
+    .col-offset(1; min; @vp-sm);
 }
 
 .Resume-column_title {
-    text-align: center;
-    font-size: 30px;
-    color: @white;
-}
-
-.Resume-box {
-    &:not(:first-child) {
-        margin-top: 30px;
-    }
-}
-
-.Resume-box_title_wrapper {
-    background-color: @light-teal;
-    padding: 30px 15px 15px 15px;
-    border-top-left-radius: 5px;
-    border-top-right-radius: 5px;
-}
-
-.Resume-box_title {
     font-weight: @font-weight_bold;
     margin: 0;
-    text-align: center;
 }
 
-
-.Resume-box_info {
-    border-bottom-left-radius: 5px;
-    border-bottom-right-radius: 5px;
-    background-color: @white;
-    padding: 15px 15px 30px 15px;
-}
-
-.Resume-grad_year {
+.Resume-highlight {
     font-style: italic;
     font-weight: @font-weight_bold;
 }

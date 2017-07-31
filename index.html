@@ -5,6 +5,8 @@
         <meta name="description" content="Page Description Here" />
         <meta http-equiv="Content-Type" content="text/html"; charset="utf-8"/>
         <meta name="viewport" content="width=device-width, initial-scale=1"/>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="scrollto.js" type="text/javascript"></script>
         <link rel="stylesheet" type="text/css" href="dist/styles/master.css">
         <link href="https://fonts.googleapis.com/css?family=Zilla+Slab:300,400,500,700" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400" rel="stylesheet">
@@ -23,14 +25,14 @@
                         <a href="/" class="Navigation-home_link">LG</a>
                     </div>
                     <ul class="Navigation-link_list">
-                        <li class="Navigation-link_item"><a href="#" class="Navigation-link">About</a></li>
-                        <li class="Navigation-link_item"><a href="#" class="Navigation-link">Resumé</a></li>
-                        <li class="Navigation-link_item"><a href="#" class="Navigation-link">Work</a></li>
+                        <li class="Navigation-link_item"><a href="#about" data-smoothscroll class="Navigation-link">About</a></li>
+                        <li class="Navigation-link_item"><a href="#work" data-smoothscroll class="Navigation-link">Work</a></li>
+                        <li class="Navigation-link_item"><a href="#resume" data-smoothscroll class="Navigation-link">Resumé</a></li>
                     </ul>
                 </div>
             </div>
         </nav>
-        <section class="Intro">
+        <section class="Intro" id="about">
             <div class="Container Intro-container">
                 <div class="Intro-image_wrapper">
                     <img src="images/Leah.jpg" class="Intro-image">
@@ -44,7 +46,7 @@
                 </div>
             </div>
         </section>
-        <section class="Work clearfix">
+        <section class="Work clearfix" id="work">
             <h3 class="Work-heading">Work</h2>
             <div class="Work-wrapper">
                 <div class="Work-item">
@@ -185,39 +187,67 @@
                 </div>
             </div>
         </section>
-        <section class="Resume clearfix">
+        <section class="Resume clearfix" id="resume">
             <h3 class="Resume-title">Resumé</h3>
             <div class="Resume-section_wrapper">
-                <div class="Resume-column Resume-education">
-                    <div class="Resume-column_title_wrapper">
-                        <h4 class="Resume-column_title">Education</h4>
-                    </div>
-                    <div class="Resume-box">
-                        <div class="Resume-box_title_wrapper">
-                            <p class="Resume-box_title">Farmingdale State College</p>
-                        </div>
-                        <div class="Resume-box_info">
-                            <p class="Resume-box_subheading">Bachelor’s Degree - Computer Programming &amp; Information Systems, <span class="Resume-grad_year">2015</span></p>
-                            <ul class="Resume-box_list">
-                                <li class="Resume-box_list_item">
-                                    Cumulative GPA: 3.42
-                                </li>
-                                <li class="Resume-box_list_item">
-                                    Deans List: Fall 2014
-                                </li>
-
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="Resume-box">
-                        <div class="Resume-box_title_wrapper">
-                            <p class="Resume-box_title">Suffolk County Community College</p>
-                        </div>
-                        <div class="Resume-box_info">
-                            <p class="Resume-box_subheading">Associate’s Degree - Liberal Arts, <span class="Resume-grad_year">2012</span></p>
-                        </div>
+                <div class="Resume-row_title Resume-education">
+                    <div class="Resume-row_title_wrapper">
+                        <h4 class="Resume-row_title">Education</h4>
                     </div>
                 </div>
+                <div class="Resume-row clearfix">
+                    <div class="Resume-title_column">
+                        <div class="Resume-column_title_wrapper">
+                            <p class="Resume-column_title">Farmingdale State College</p>
+                        </div>
+                    </div>
+                    <div class="Resume-info_column">
+                        <p class="Resume-info_subheading">Bachelor’s Degree - Computer Programming &amp; Information Systems, <span class="Resume-highlight">2015</span></p>
+                        <ul class="Resume-info_list">
+                            <li class="Resume-info_list_item">
+                                Cumulative GPA: <span class="Resume-highlight">3.42
+                            </li>
+                            <li class="Resume-info_list_item">
+                                Deans List: <span class="Resume-highlight">Fall 2014</span>
+                            </li>
+                            <li class="Resume-info_list_item">
+                                Computer Tech Club:
+                            </li>
+                            <ul class="Resume-info_list_level2">
+                                <li class="Resume-info_list_item_level2">
+                                    Vice President, <span class="Resume-highlight">2014 – 2015</span>
+                                </li>
+                                <ul class="Resume-info_list_level3">
+                                    <li class="Resume-info_list_item_level3">
+                                        Assist in setting up events, such as Local Area Network (LAN) parties.
+                                    </li>
+                                    <li class="Resume-info_list_item_level3">
+                                        Invite guest speakers for presentations.
+                                    </li>
+                                    <li class="Resume-info_list_item_level3">
+                                        Keep track of important records and information for events.
+                                    </li>
+                                </ul>
+                            </ul>
+                        </ul>
+                    </div>
+                </div>
+                <div class="Resume-row clearfix">
+                    <div class="Resume-title_column">
+                        <div class="Resume-column_title_wrapper">
+                            <p class="Resume-column_title">Suffolk County Community College</p>
+                        </div>
+                    </div>
+                    <div class="Resume-info_column">
+                        <p class="Resume-info_subheading">Associate’s Degree - Liberal Arts, <span class="Resume-highlight">2012</span></p>
+                        <ul class="Resume-info_list">
+                            <li class="Resume-info_list_item">
+                                Deans List: <span class="Resume-highlight">Fall 2011</span>, <span class="Resume-highlight">Spring 2012</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
         </section>
     </body>
     <footer class="Footer">

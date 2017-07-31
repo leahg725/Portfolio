@@ -674,62 +674,70 @@ th {
   }
 }
 .Resume-title {
+  color: #FFFFFF;
+  text-align: center;
+}
+.Resume-row_title {
   text-align: center;
   margin: 0 15px 30px 15px;
-  color: #FFFFFF;
+  color: #0C1713;
 }
 .Resume-section_wrapper {
   min-height: 1px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  background-color: #FFFFFF;
 }
 @media (min-width: 768px) {
   .Resume-section_wrapper {
+    float: left;
+    width: 83.33333333%;
+  }
+}
+@media (min-width: 768px) {
+  .Resume-section_wrapper {
+    margin-left: 8.33333333%;
+  }
+}
+@media (min-width: 768px) {
+  .Resume-section_wrapper {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+}
+.Resume-title_column {
+  min-height: 1px;
+}
+@media (min-width: 768px) {
+  .Resume-title_column {
+    float: left;
+    width: 25%;
+  }
+}
+.Resume-column_title_wrapper {
+  text-align: right;
+  font-size: 18px;
+  color: #0C1713;
+}
+.Resume-info_column {
+  min-height: 1px;
+}
+@media (min-width: 768px) {
+  .Resume-info_column {
     float: left;
     width: 66.66666667%;
   }
 }
 @media (min-width: 768px) {
-  .Resume-section_wrapper {
-    margin-left: 16.66666667%;
-  }
-}
-.Resume-column {
-  margin-left: 15px;
-  margin-right: 15px;
-  min-height: 1px;
-}
-@media (min-width: 768px) {
-  .Resume-column {
-    float: left;
-    width: 46.97580645%;
-    width: calc( 50% - 30px );
+  .Resume-info_column {
+    margin-left: 8.33333333%;
   }
 }
 .Resume-column_title {
-  text-align: center;
-  font-size: 30px;
-  color: #FFFFFF;
-}
-.Resume-box:not(:first-child) {
-  margin-top: 30px;
-}
-.Resume-box_title_wrapper {
-  background-color: #CDFFFF;
-  padding: 30px 15px 15px 15px;
-  border-top-left-radius: 5px;
-  border-top-right-radius: 5px;
-}
-.Resume-box_title {
   font-weight: 700;
   margin: 0;
-  text-align: center;
 }
-.Resume-box_info {
-  border-bottom-left-radius: 5px;
-  border-bottom-right-radius: 5px;
-  background-color: #FFFFFF;
-  padding: 15px 15px 30px 15px;
-}
-.Resume-grad_year {
+.Resume-highlight {
   font-style: italic;
   font-weight: 700;
 }
