@@ -676,11 +676,57 @@ th {
 .Resume-title {
   color: #FFFFFF;
   text-align: center;
+  margin: 0;
   margin-bottom: 15px;
 }
 .Resume-download_link_wrapper {
   margin-bottom: 30px;
   text-align: center;
+}
+.Resume-download_link {
+  background: transparent;
+  border-width: 0px;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  padding: 0;
+  display: inline-block;
+  overflow: hidden;
+  position: relative;
+  background-color: #CDFFFF;
+  color: #FF0000;
+  padding: 15px;
+  border-radius: 5px;
+  border: 2px dashed #FF0000;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+.Resume-download_link i {
+  position: absolute;
+  -webkit-transform: translate(-45px, 25px);
+          transform: translate(-45px, 25px);
+  display: inline-block;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+.Resume-download_link span {
+  display: inline-block;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+.Resume-download_link:hover,
+.Resume-download_link:focus {
+  padding-right: 35px;
+}
+.Resume-download_link:hover span,
+.Resume-download_link:focus span {
+  -webkit-transform: translateX(25px);
+          transform: translateX(25px);
+}
+.Resume-download_link:hover i,
+.Resume-download_link:focus i {
+  -webkit-transform: translate(0px, 0px);
+          transform: translate(0px, 0px);
 }
 .Resume-row {
   border-bottom: 1px solid #4FD5D6;
@@ -768,6 +814,7 @@ th {
 h1 {
   font-family: 'Pacifico', cursive;
   font-weight: 400;
+  font-size: 50px;
 }
 @media (min-width: 768px) {
   h1 {
@@ -793,6 +840,8 @@ h2 {
 h3 {
   font-family: 'Pacifico', cursive;
   color: #4FD5D6;
+  font-size: 40px;
+  line-height: 1.25;
 }
 @media (min-width: 992px) {
   h3 {
