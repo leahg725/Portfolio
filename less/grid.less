@@ -1,5 +1,6 @@
 @columns: 12;
 @margin_width: 30px;
+@padding_width: 30px;
 @emulation_width: @vp-md;
 
 .col(@col-width; min; @min-bp: 0px; @margin_width: @margin_width; @float: left; @parent_width: 100%) {
@@ -14,6 +15,12 @@
 .col-offset(@col-width; min; @min-bp: 0px; @margin_width: @margin_width; @parent_width: 100%) {
     @media (min-width: @min-bp) {
         margin-left: (@col-width / @columns * @parent_width);
+    }
+}
+
+.col-padding_offset(@col-width; min; @min-bp: 0px; @margin_width: @padding_width; @parent_width: 100%) {
+    @media (min-width: @min-bp) {
+        padding-left: (@col-width / @columns * @parent_width);
     }
 }
 
