@@ -126,11 +126,13 @@
   transition: 0.5s all ease;
 }
 .Footer-social_item a:hover,
-.Footer-social_item a:focus {
+.Footer-social_item a:focus,
+.Footer-social_item a.active {
   color: #4FD5D6;
 }
 .Footer-social_item a:hover:after,
-.Footer-social_item a:focus:after {
+.Footer-social_item a:focus:after,
+.Footer-social_item a.active:after {
   width: 100%;
 }
 .Footer-social_item a:before {
@@ -471,11 +473,13 @@
   transition: 0.5s all ease;
 }
 .Navigation-link:hover,
-.Navigation-link:focus {
+.Navigation-link:focus,
+.Navigation-link.active {
   color: #4FD5D6;
 }
 .Navigation-link:hover:after,
-.Navigation-link:focus:after {
+.Navigation-link:focus:after,
+.Navigation-link.active:after {
   width: 100%;
 }
 /*! normalize.css v3.0.2 | MIT License | git.io/normalize */

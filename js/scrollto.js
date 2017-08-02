@@ -1,4 +1,22 @@
 $(document).ready(function() {
+
+    //https://jsfiddle.net/cse_tushar/Dxtyu/141/
+    function onScroll(event){
+        var scrollPos = $(document).scrollTop();
+        $('.Navigation-link').each(function () {
+            var currLink = $(this);
+            var refElement = $(currLink.attr("href"));
+            if (refElement.position().top <= scrollPos && refElement.position().top + refElement.height() > scrollPos) {
+                $('#menu-center ul li a').removeClass("active");
+                currLink.addClass("active");
+            }
+            else{
+                currLink.removeClass("active");
+            }
+        });
+    }
+
+
     $('[data-smoothscroll]').click(function() {
         if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
           var $target = $(this.hash);
@@ -13,4 +31,6 @@ $(document).ready(function() {
             }
         }
     });
+
+    $(document).on("scroll", onScroll);
 });
