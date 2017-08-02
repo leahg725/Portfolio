@@ -1,4 +1,4 @@
-(function($) {
+$(document).ready(function() {
     $('[data-smoothscroll]').click(function() {
         if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
           var $target = $(this.hash);
@@ -13,4 +13,4 @@
             }
         }
     });
-}(jQuery));
+});
