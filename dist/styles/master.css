@@ -849,12 +849,12 @@ h3 {
     font-size: 65px;
   }
 }
-.h4 {
+h4 {
   font-family: 'Arimo', sans-serif;
   font-size: 25px;
 }
 @media (min-width: 768px) {
-  .h4 {
+  h4 {
     font-size: 30px;
   }
 }
@@ -968,7 +968,7 @@ ol li {
           transform: translate(-50%, -50%);
 }
 .Work-item_hover {
-  background: rgba(0, 0, 0, 0.4);
+  background: rgba(255, 0, 0, 0.4);
   opacity: 0;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
@@ -991,7 +991,7 @@ ol li {
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
-  font-size: 14px;
+  font-size: 18px;
   font-weight: 700;
   text-transform: uppercase;
   margin: 0;
@@ -1003,7 +1003,7 @@ ol li {
   background-color: #FFFFFF;
   color: #4FD5D6;
   border-radius: 100%;
-  padding: 10px;
+  padding: 13px 10px 10px 13px;
 }
 .Work-item_hover_icon i:before {
   font-size: 20px;
