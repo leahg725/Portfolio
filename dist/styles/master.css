@@ -147,7 +147,7 @@
   margin-bottom: 0;
 }
 .Intro {
-  padding-top: 40px;
+  padding-top: 0px;
   padding-bottom: 40px;
   padding: 0 15px;
   display: -webkit-box;
@@ -158,12 +158,21 @@
           align-items: center;
   background-color: #4FD5D6;
   color: #FFFFFF;
+  margin-top: 50px;
 }
 @media (min-width: 768px) {
   .Intro {
     padding-top: 100px;
     padding-bottom: 100px;
   }
+}
+@media (min-width: 768px) {
+  .Intro {
+    margin-top: 75px;
+  }
+}
+.Intro-container {
+  padding-top: 30px;
 }
 .Intro-image_wrapper {
   margin-left: 15px;

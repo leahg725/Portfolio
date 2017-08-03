@@ -1,10 +1,18 @@
 .Intro {
-    .section-padding(@ptbp: 100px; @pbbp: 100px);
+    .section-padding(@pt: 0px; @ptbp: 100px; @pbbp: 100px);
     padding: 0 15px;
     display: flex;
     align-items: center;
     background-color: @teal;
     color: @white;
+    margin-top: 50px;
+    @media (min-width: @vp-sm) {
+        margin-top: 75px;
+    }
+}
+
+.Intro-container {
+    padding-top: 30px;
 }
 
 .Intro-image_wrapper{
