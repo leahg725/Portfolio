@@ -1,5 +1,5 @@
 $(document).ready(function() {
-    $('.Navigation-menu_toggle').on('touchstart touchend click', function(e) {
+    $('.Navigation-menu_toggle').on('touchstart click', function(e) {
         if($('.Navigation-link_list_wrapper').hasClass('closed')) {
             $('.Navigation-link_list_wrapper').removeClass('closed');
             $('.Navigation-link_list_wrapper').addClass('open');
