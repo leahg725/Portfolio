@@ -513,11 +513,15 @@
 .Navigation-menu_toggle_line:nth-child(2) {
   margin-bottom: 3px;
 }
+@media (max-width: 479px) {
+  .Navigation-link_list_wrapper {
+    top: 50px;
+  }
+}
 @media (max-width: 1199px) {
   .Navigation-link_list_wrapper {
     float: right;
     position: fixed;
-    top: 75px;
     bottom: 0;
     left: 0;
     right: 0;
@@ -531,6 +535,11 @@
   .Navigation-link_list_wrapper.closed {
     -webkit-transform: translateX(-100%);
             transform: translateX(-100%);
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .Navigation-link_list_wrapper {
+    top: 75px;
   }
 }
 .Navigation-link_list {
