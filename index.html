@@ -15,7 +15,8 @@
         <link href="https://fonts.googleapis.com/css?family=Arimo:400,700" rel="stylesheet">
         <script src="https://use.fontawesome.com/130277de9d.js"></script>
         <script src="js/scrollto.js"></script>
-        <script src="js/navopen.js"></script>
+        <!--<script src="js/navopen.js"></script>-->
+        <script src="js/pushy.min.js"></script>
     </head>
 
     <body>
@@ -35,12 +36,14 @@
                             </button>
                         </div>
                     </div>
-                    <div class="Navigation-link_list_wrapper closed">
-                        <ul class="Navigation-link_list">
-                            <li class="Navigation-link_item"><a href="#about" data-smoothscroll class="Navigation-link">About</a></li>
-                            <li class="Navigation-link_item"><a href="#work" data-smoothscroll class="Navigation-link">Work</a></li>
-                            <li class="Navigation-link_item"><a href="#resume" data-smoothscroll class="Navigation-link">Resumé</a></li>
-                        </ul>
+                    <div class="Navigation-link_list_wrapper pushy pushy-left">
+                        <div class="Navigation-link_list_inner pushy-content">
+                            <ul class="Navigation-link_list">
+                                <li class="Navigation-link_item pushy-link"><a href="#about" data-smoothscroll class="Navigation-link">About</a></li>
+                                <li class="Navigation-link_item pushy-link"><a href="#work" data-smoothscroll class="Navigation-link">Work</a></li>
+                                <li class="Navigation-link_item pushy-link"><a href="#resume" data-smoothscroll class="Navigation-link">Resumé</a></li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>
