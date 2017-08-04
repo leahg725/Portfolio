@@ -887,8 +887,10 @@ th {
           transform: translate(0px, 0px);
 }
 .Resume-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   border-bottom: 1px solid #FF0000;
-  padding: 60px 0;
 }
 .Resume-row:last-child {
   border-bottom: 0;
@@ -929,20 +931,19 @@ th {
   text-align: center;
   color: #0C1713;
 }
-.Resume-content_column {
+.Resume-info_column {
   min-height: 1px;
+  padding: 60px 0;
+  padding-right: 15px;
 }
 @media (min-width: 768px) {
-  .Resume-content_column {
+  .Resume-info_column {
     float: left;
     width: 75%;
   }
 }
-.Resume-info {
-  padding-right: 15px;
-}
 @media (min-width: 768px) {
-  .Resume-info {
+  .Resume-info_column {
     padding-left: 8.33333333%;
   }
 }

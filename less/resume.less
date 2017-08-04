@@ -22,8 +22,8 @@
 }
 
 .Resume-row {
+    display: flex;
     border-bottom: 1px solid @red;
-    padding: 60px 0;
     &:last-child {
         border-bottom: 0;
     }
@@ -58,11 +58,13 @@
 }
 
 .Resume-content_column {
-    .col(9; min; @vp-sm);
+//    .col(9; min; @vp-sm);
 }
 
-.Resume-info {
+.Resume-info_column {
+    .col(9; min; @vp-sm);
     .col-padding_offset(1; min; @vp-sm);
+    padding: 60px 0;
     padding-right: 15px;
 }
 
