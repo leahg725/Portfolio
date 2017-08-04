@@ -4,16 +4,17 @@
 @font-family_pacifico: 'Pacifico', cursive;
 @font-family_arimo: 'Arimo', sans-serif;
 
-@font-weight_bold: 700;
-@font-weight_semibold: 500;
+@font-weight_light: 300;
 @font-weight_normal: 400;
+@font-weight_semibold: 500;
+@font-weight_bold: 700;
 
 @font-family_heading: @font-family_pacifico;
 @font-family: @font-family_arimo;
 
 h1 {
     font-family: @font-family_heading;
-    font-weight: @font-weight_normal;
+    font-weight: @font-weight_light;
     font-size: 40px;
     line-height: 1.25;
     @media (min-width: @vp-sm) {
@@ -36,6 +37,7 @@ h2 {
 
 h3 {
     font-family: @font-family_heading;
+    font-weight: @font-weight_light;
     color: @teal;
     font-size: 40px;
     line-height: 1.25;

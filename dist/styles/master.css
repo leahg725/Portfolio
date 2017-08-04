@@ -905,6 +905,7 @@ th {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  border-bottom: 1px solid #FF0000;
 }
 .Resume-row:last-child {
   border-bottom: 0;
@@ -931,7 +932,8 @@ th {
   }
 }
 .Resume-section_inner {
-  border: 1px solid #FF0000;
+  -webkit-box-shadow: 0px 0px 8px 0px rgba(12, 23, 19, 0.5);
+          box-shadow: 0px 0px 8px 0px rgba(12, 23, 19, 0.5);
 }
 .Resume-title_column {
   min-height: 1px;
@@ -1027,7 +1029,7 @@ body {
 }
 h1 {
   font-family: 'Pacifico', cursive;
-  font-weight: 400;
+  font-weight: 300;
   font-size: 40px;
   line-height: 1.25;
 }
@@ -1054,6 +1056,7 @@ h2 {
 }
 h3 {
   font-family: 'Pacifico', cursive;
+  font-weight: 300;
   color: #4FD5D6;
   font-size: 40px;
   line-height: 1.25;
