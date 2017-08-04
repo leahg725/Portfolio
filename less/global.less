@@ -1,4 +1,4 @@
-.underline(@mt: 5px; @bg: @white) {
+.underline(@mt: 10px; @mtbp: 5px; @bg: @white) {
     &:after {
         content: '';
         display: block;
@@ -6,6 +6,9 @@
         height: 2px;
         margin: @mt auto 0 auto;
         background-color: @bg;
+        @media (min-width: @vp-sm) {
+            margin-top: @mtbp;
+        }
     }
 }
 

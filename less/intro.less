@@ -1,6 +1,6 @@
 .Intro {
-    .section-padding(@pt: 0px; @ptbp: 100px; @pbbp: 100px);
-    padding: 0 15px;
+    .section-padding(@pt: 40px; @ptbp: 100px; @pbbp: 100px);
+    .padding();
     display: flex;
     align-items: center;
     background-color: @teal;
@@ -9,10 +9,6 @@
     @media (min-width: @vp-sm) {
         margin-top: 75px;
     }
-}
-
-.Intro-container {
-    padding-top: 30px;
 }
 
 .Intro-image_wrapper{
@@ -41,6 +37,10 @@
 .Intro-heading {
     .underline;
     margin: 0;
+    padding-top: 10px;
+    @media (min-width: @vp-lg) {
+        padding-top: 0;
+    }
 }
 
 .Intro-subheading {
@@ -51,9 +51,12 @@
 }
 
 .Intro-contact_info {
-    padding-top: 50px;
+    padding-top: 30px;
     text-align: center;
-    margin: 0 -15px;
+    //margin: 0 -15px;
+    @media (min-width: @vp-sm) {
+        padding-top: 50px;
+    }
 }
 
 .Intro-contact_link {
