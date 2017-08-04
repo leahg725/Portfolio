@@ -391,6 +391,7 @@
   width: 100%;
 }
 .Navigation {
+  background-color: #FFFFFF;
   position: fixed;
   top: 0;
   left: 0;
@@ -404,17 +405,6 @@
   .Navigation {
     height: 75px;
   }
-}
-@media (min-width: 1200px) {
-  .Navigation {
-    margin: 0 -15px;
-  }
-}
-.Navigation-container {
-  height: 100%;
-}
-.Navigation {
-  background-color: #FFFFFF;
 }
 .Navigation-wrapper {
   height: 100%;
@@ -587,7 +577,13 @@
     display: flex;
   }
 }
+.Navigation-link_item {
+  padding: 10px 0;
+}
 @media (min-width: 1200px) {
+  .Navigation-link_item {
+    padding: 0;
+  }
   .Navigation-link_item:not(:last-child):after {
     content: '/';
     display: inline-block;
@@ -605,6 +601,7 @@
   position: relative;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
+  padding: 10px 0;
 }
 .Navigation-link:after {
   content: '';
@@ -628,6 +625,11 @@
 .Navigation-link:focus:after,
 .Navigation-link.active:after {
   width: 100%;
+}
+@media (min-width: 1200px) {
+  .Navigation-link {
+    padding: 0;
+  }
 }
 /*! normalize.css v3.0.2 | MIT License | git.io/normalize */
 html {
