@@ -149,8 +149,6 @@
 .Intro {
   padding-top: 40px;
   padding-bottom: 40px;
-  padding-left: 15px;
-  padding-right: 15px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -163,13 +161,14 @@
 }
 @media (min-width: 768px) {
   .Intro {
-    padding-top: 100px;
-    padding-bottom: 100px;
+    padding-top: 60px;
+    padding-bottom: 60px;
   }
 }
-@media (min-width: 768px) {
+@media (min-width: 1200px) {
   .Intro {
-    margin-top: 75px;
+    padding-top: 100px;
+    padding-bottom: 100px;
   }
 }
 .Intro-image_wrapper {
@@ -193,14 +192,14 @@
 @media (min-width: 768px) {
   .Intro-image_wrapper {
     float: left;
-    width: 30.30913978%;
-    width: calc( 33.33333333% - 30px );
+    width: 26.14247312%;
+    width: calc( 29.16666667% - 30px );
   }
 }
 @media (min-width: 768px) {
   .Intro-image_wrapper {
-    margin-left: 345.66666667px;
-    margin-left: calc( 33.33333333% + 15px );
+    margin-left: 366.33333333px;
+    margin-left: calc( 35.41666667% + 15px );
   }
 }
 @media (min-width: 1200px) {
@@ -274,7 +273,7 @@
   padding-top: 30px;
   text-align: center;
 }
-@media (min-width: 768px) {
+@media (min-width: 1200px) {
   .Intro-contact_info {
     padding-top: 50px;
   }
@@ -286,11 +285,18 @@
   position: relative;
   background-color: #CDFFFF;
   color: #FF0000;
-  padding: 15px;
+  padding: 10px 15px;
+  font-size: 14px;
   border-radius: 5px;
   border: 2px dashed #FF0000;
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
+}
+@media (min-width: 1200px) {
+  .Intro-contact_link {
+    padding: 15px;
+    font-size: 16px;
+  }
 }
 .Intro-contact_link i {
   position: absolute;
@@ -335,11 +341,18 @@
   position: relative;
   background-color: #CDFFFF;
   color: #FF0000;
-  padding: 15px;
+  padding: 10px 15px;
+  font-size: 14px;
   border-radius: 5px;
   border: 2px dashed #FF0000;
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
+}
+@media (min-width: 1200px) {
+  .Intro-resume_link {
+    padding: 15px;
+    font-size: 16px;
+  }
 }
 .Intro-resume_link i {
   position: absolute;
@@ -413,11 +426,6 @@
   height: 50px;
   -webkit-box-shadow: 0px 1px 3px 0px rgba(12, 23, 19, 0.5);
           box-shadow: 0px 1px 3px 0px rgba(12, 23, 19, 0.5);
-}
-@media (min-width: 768px) {
-  .Navigation {
-    height: 75px;
-  }
 }
 .Navigation-wrapper {
   height: 100%;
@@ -837,6 +845,8 @@ th {
 .Resume {
   padding-top: 40px;
   padding-bottom: 40px;
+  padding-left: 15px;
+  padding-right: 15px;
   color: #0C1713;
   background-color: #4FD5D6;
 }
@@ -868,11 +878,18 @@ th {
   position: relative;
   background-color: #CDFFFF;
   color: #FF0000;
-  padding: 15px;
+  padding: 10px 15px;
+  font-size: 14px;
   border-radius: 5px;
   border: 2px dashed #FF0000;
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
+}
+@media (min-width: 1200px) {
+  .Resume-download_link {
+    padding: 15px;
+    font-size: 16px;
+  }
 }
 .Resume-download_link i {
   position: absolute;
@@ -1060,7 +1077,7 @@ h1 {
 }
 @media (min-width: 768px) {
   h1 {
-    font-size: 55px;
+    font-size: 60px;
   }
 }
 @media (min-width: 1200px) {
@@ -1086,7 +1103,12 @@ h3 {
   font-size: 40px;
   line-height: 1.25;
 }
-@media (min-width: 992px) {
+@media (min-width: 768px) {
+  h3 {
+    font-size: 55px;
+  }
+}
+@media (min-width: 1200px) {
   h3 {
     font-size: 65px;
   }
@@ -1134,8 +1156,13 @@ ol li {
 }
 @media (min-width: 768px) {
   .Work {
-    padding-top: 80px;
+    padding-top: 60px;
     padding-bottom: 0;
+  }
+}
+@media (min-width: 1200px) {
+  .Work {
+    padding-top: 100px;
   }
 }
 .Work-heading {
@@ -1208,13 +1235,18 @@ ol li {
   color: #FFFFFF;
 }
 .Work-item_overlay {
+  padding-left: 15px;
+  padding-right: 15px;
   position: absolute;
   top: 50%;
   left: 50%;
+  width: 100%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
 }
 .Work-item_hover {
+  padding-left: 15px;
+  padding-right: 15px;
   background: rgba(255, 0, 0, 0.4);
   opacity: 0;
   -webkit-transition: all 0.3s;
@@ -1244,6 +1276,7 @@ ol li {
   text-transform: uppercase;
   margin: 0;
   color: #FFFFFF;
+  width: 100%;
 }
 .Work-item_hover_icon {
   position: absolute;
