@@ -1162,7 +1162,12 @@ ol li {
 .Work-item_wrapper:before {
   content: '';
   display: block;
-  padding-bottom: 60%;
+  padding-bottom: 70%;
+}
+@media (min-width: 1200px) {
+  .Work-item_wrapper:before {
+    padding-bottom: 60%;
+  }
 }
 .Work-item_link {
   text-decoration: none;
