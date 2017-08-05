@@ -22,10 +22,12 @@
 }
 
 .Resume-row {
-    display: flex;
     border-bottom: 1px solid @red;
     &:last-child {
         border-bottom: 0;
+    }
+    @media (min-width: @vp-sm) {
+        display: flex;
     }
 }
 
@@ -48,7 +50,8 @@
 
 .Resume-title_column {
     .col(3; min; @vp-sm);
-    padding: 60px 0 60px 15px;
+    .padding();
+    .section-padding(@pt: 30px; @pb: 15px; @ptbp: 60px; @pbbp: 60px);
 }
 
 .Resume-column_title_wrapper {
@@ -58,9 +61,11 @@
 
 .Resume-info_column {
     .col(9; min; @vp-sm);
-    .col-padding_offset(1; min; @vp-sm);
-    padding: 60px 0;
-    padding-right: 15px;
+    .col-offset(1; min; @vp-sm);
+    .section-padding(@pt: 15px; @pb: 30px; @ptbp: 60px; @pbbp: 60px);
+    @media (max-width: @vp-md-max) {
+        .padding();
+    }
 }
 
 .Resume-info {
