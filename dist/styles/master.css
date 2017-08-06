@@ -391,6 +391,9 @@
     margin-top: 50px;
   }
 }
+.Intro-scroll_link {
+  text-decoration: none;
+}
 .Intro-scroll_wheel {
   width: 3px;
   height: 7px;
