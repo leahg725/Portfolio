@@ -147,6 +147,38 @@
   margin-top: 0;
   margin-bottom: 0;
 }
+@-webkit-keyframes scrollWheel {
+  0% {
+    opacity: 1;
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
+  50% {
+    -webkit-transform: translateY(5px);
+            transform: translateY(5px);
+  }
+  100% {
+    opacity: 0;
+    -webkit-transform: translateY(10px);
+            transform: translateY(10px);
+  }
+}
+@keyframes scrollWheel {
+  0% {
+    opacity: 1;
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
+  50% {
+    -webkit-transform: translateY(5px);
+            transform: translateY(5px);
+  }
+  100% {
+    opacity: 0;
+    -webkit-transform: translateY(10px);
+            transform: translateY(10px);
+  }
+}
 .Intro {
   padding-top: 40px;
   padding-bottom: 40px;
@@ -187,38 +219,6 @@
   margin-right: auto;
   margin-top: 50px;
   position: relative;
-}
-@-webkit-keyframes scrollWheel {
-  0% {
-    opacity: 1;
-    -webkit-transform: translateY(0px);
-            transform: translateY(0px);
-  }
-  50% {
-    -webkit-transform: translateY(5px);
-            transform: translateY(5px);
-  }
-  100% {
-    opacity: 0;
-    -webkit-transform: translateY(10px);
-            transform: translateY(10px);
-  }
-}
-@keyframes scrollWheel {
-  0% {
-    opacity: 1;
-    -webkit-transform: translateY(0px);
-            transform: translateY(0px);
-  }
-  50% {
-    -webkit-transform: translateY(5px);
-            transform: translateY(5px);
-  }
-  100% {
-    opacity: 0;
-    -webkit-transform: translateY(10px);
-            transform: translateY(10px);
-  }
 }
 .Intro-scroll_wheel {
   width: 3px;
@@ -298,11 +298,24 @@
 @media (min-width: 768px) {
   .Intro-content_wrapper {
     float: left;
+    width: 80.30913978%;
+    width: calc( 83.33333333% - 30px );
+  }
+}
+@media (min-width: 768px) {
+  .Intro-content_wrapper {
+    margin-left: 97.66666667px;
+    margin-left: calc( 8.33333333% + 15px );
+  }
+}
+@media (min-width: 1200px) {
+  .Intro-content_wrapper {
+    float: left;
     width: 63.64247312%;
     width: calc( 66.66666667% - 30px );
   }
 }
-@media (min-width: 768px) {
+@media (min-width: 1200px) {
   .Intro-content_wrapper {
     margin-left: 180.33333333px;
     margin-left: calc( 16.66666667% + 15px );
@@ -1159,10 +1172,14 @@ h2 {
   font-size: 20px;
   line-height: 1.5;
 }
-@media (min-width: 992px) {
+@media (min-width: 768px) {
+  h2 {
+    font-size: 25px;
+  }
+}
+@media (min-width: 1200px) {
   h2 {
     font-size: 30px;
-    line-height: 1.5;
   }
 }
 h3 {
