@@ -169,8 +169,6 @@
 @media (min-width: 1200px) {
   .Intro {
     margin-top: 70px;
-    padding-top: 80px;
-    padding-bottom: 80px;
   }
 }
 .Intro-scroll_wrapper {
@@ -187,7 +185,7 @@
   border: 2px solid #FFFFFF;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 30px;
+  margin-top: 50px;
   position: relative;
 }
 @-webkit-keyframes scrollWheel {
