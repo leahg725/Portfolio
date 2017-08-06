@@ -575,11 +575,6 @@
 .Navigation-link_list_wrapper {
   top: 50px;
 }
-@media (min-width: 768px) {
-  .Navigation-link_list_wrapper {
-    top: 75px;
-  }
-}
 @media (min-width: 1200px) {
   .Navigation-link_list_wrapper {
     top: auto;
