@@ -19,45 +19,9 @@
     background-color: @teal;
     color: @white;
     margin-top: 50px;
-    @media (min-width: @vp-sm) {
-        padding-top: 20px;
-    }
     @media (min-width: @vp-lg) {
         margin-top: 70px;
     }
-}
-
-.Intro-scroll_wrapper {
-    .margin();
-    text-align: center;
-    clear: both;
-}
-
-.Intro-scroll {
-    display: inline-block;
-    height: 50px;
-    width: 30px;
-    border-radius: 50px;
-    border: 2px solid @white;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 50px;
-    position: relative;
-}
-
-.Intro-scroll_wheel {
-    width: 3px;
-    height: 7px;
-    margin-top: 10px;
-    margin-left: auto;
-    margin-right: auto;
-    border-radius: 25px;
-    background-color: @white;
-    animation-name: scrollWheel;
-    animation-iteration-count: infinite;
-    animation-duration: 1s;
-    opacity: 1;
-    animation-delay: .5s;
 }
 
 .Intro-image_wrapper{
@@ -67,6 +31,9 @@
     .col-with_margins--offset(4.25; min; @vp-sm);
     .col-with_margins(2; min; @vp-lg);
     .col-with_margins--offset(5; min; @vp-lg);
+    @media (min-width: @vp-sm) {
+        padding-top: 20px;
+    }
 }
 
 .Intro-image {
@@ -104,10 +71,6 @@
 .Intro-contact_info {
     padding-top: 30px;
     text-align: center;
-    //margin: 0 -15px;
-    @media (min-width: @vp-lg) {
-        //padding-top: 50px;
-    }
 }
 
 .Intro-contact_link {
@@ -121,13 +84,35 @@
     }
 }
 
-.Intro-contact_link--separator {
-    height: 20px;
-    width: 2px;
-    background-color: @teal;
+.Intro-scroll_wrapper {
+    .margin();
+    text-align: center;
+    clear: both;
 }
 
-.Intro-resume_link {
-    .link-revert();
-    .button-primary();
+.Intro-scroll {
+    display: inline-block;
+    height: 50px;
+    width: 30px;
+    border-radius: 50px;
+    border: 2px solid @white;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    position: relative;
+}
+
+.Intro-scroll_wheel {
+    width: 3px;
+    height: 7px;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 25px;
+    background-color: @white;
+    animation-name: scrollWheel;
+    animation-iteration-count: infinite;
+    animation-duration: 1s;
+    opacity: 1;
+    animation-delay: .5s;
 }
