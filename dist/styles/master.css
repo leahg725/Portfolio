@@ -934,8 +934,8 @@ th {
 }
 @media (min-width: 768px) {
   .Resume {
-    padding-top: 80px;
-    padding-bottom: 80px;
+    padding-top: 60px;
+    padding-bottom: 60px;
   }
 }
 .Resume-title {
