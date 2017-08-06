@@ -1231,11 +1231,6 @@ ol li {
     padding-bottom: 0;
   }
 }
-@media (min-width: 1200px) {
-  .Work {
-    padding-top: 80px;
-  }
-}
 .Work-heading {
   text-align: center;
   margin-top: 0;
