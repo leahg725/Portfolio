@@ -168,9 +168,77 @@
 }
 @media (min-width: 1200px) {
   .Intro {
-    padding-top: 100px;
-    padding-bottom: 100px;
+    margin-top: 70px;
+    padding-top: 80px;
+    padding-bottom: 80px;
   }
+}
+.Intro-scroll_wrapper {
+  margin-left: 15px;
+  margin-right: 15px;
+  text-align: center;
+  clear: both;
+}
+.Intro-scroll {
+  display: inline-block;
+  height: 50px;
+  width: 30px;
+  border-radius: 50px;
+  border: 2px solid #FFFFFF;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 30px;
+  position: relative;
+}
+@-webkit-keyframes scrollWheel {
+  0% {
+    opacity: 1;
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
+  50% {
+    -webkit-transform: translateY(5px);
+            transform: translateY(5px);
+  }
+  100% {
+    opacity: 0;
+    -webkit-transform: translateY(10px);
+            transform: translateY(10px);
+  }
+}
+@keyframes scrollWheel {
+  0% {
+    opacity: 1;
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
+  50% {
+    -webkit-transform: translateY(5px);
+            transform: translateY(5px);
+  }
+  100% {
+    opacity: 0;
+    -webkit-transform: translateY(10px);
+            transform: translateY(10px);
+  }
+}
+.Intro-scroll_wheel {
+  width: 3px;
+  height: 7px;
+  margin-top: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 25px;
+  background-color: #FFFFFF;
+  -webkit-animation-name: scrollWheel;
+          animation-name: scrollWheel;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  opacity: 1;
+  -webkit-animation-delay: .5s;
+          animation-delay: .5s;
 }
 .Intro-image_wrapper {
   margin-left: 15px;
@@ -275,9 +343,6 @@
   text-align: center;
 }
 @media (min-width: 1200px) {
-  .Intro-contact_info {
-    padding-top: 50px;
-  }
 }
 .Intro-contact_link {
   text-decoration: none;
@@ -1170,7 +1235,7 @@ ol li {
 }
 @media (min-width: 1200px) {
   .Work {
-    padding-top: 100px;
+    padding-top: 80px;
   }
 }
 .Work-heading {
