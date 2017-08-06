@@ -194,7 +194,7 @@
 }
 @media (min-width: 768px) {
   .Intro {
-    padding-top: 40px;
+    padding-top: 60px;
     padding-bottom: 60px;
   }
 }
@@ -245,11 +245,6 @@
   .Intro-image_wrapper {
     margin-left: 428.33333333px;
     margin-left: calc( 41.66666667% + 15px );
-  }
-}
-@media (min-width: 768px) {
-  .Intro-image_wrapper {
-    padding-top: 20px;
   }
 }
 .Intro-image {
@@ -885,7 +880,7 @@ th {
 }
 @media (min-width: 768px) {
   .Resume {
-    padding-top: 40px;
+    padding-top: 60px;
     padding-bottom: 60px;
   }
 }
@@ -894,7 +889,6 @@ th {
   text-align: center;
   margin: 0;
   margin-bottom: 15px;
-  padding-top: 20px;
 }
 .Resume-download_link_wrapper {
   margin-bottom: 30px;
@@ -1201,7 +1195,7 @@ ol li {
 }
 @media (min-width: 768px) {
   .Work {
-    padding-top: 40px;
+    padding-top: 60px;
     padding-bottom: 0;
   }
 }
@@ -1209,7 +1203,6 @@ ol li {
   text-align: center;
   margin-top: 0;
   margin-bottom: 30px;
-  padding-top: 20px;
 }
 .Work-item {
   min-height: 1px;
