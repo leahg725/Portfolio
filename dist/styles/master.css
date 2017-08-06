@@ -934,7 +934,7 @@ th {
 }
 @media (min-width: 768px) {
   .Resume {
-    padding-top: 60px;
+    padding-top: 40px;
     padding-bottom: 60px;
   }
 }
@@ -943,6 +943,7 @@ th {
   text-align: center;
   margin: 0;
   margin-bottom: 15px;
+  padding-top: 20px;
 }
 .Resume-download_link_wrapper {
   margin-bottom: 30px;
@@ -1249,7 +1250,7 @@ ol li {
 }
 @media (min-width: 768px) {
   .Work {
-    padding-top: 60px;
+    padding-top: 40px;
     padding-bottom: 0;
   }
 }
@@ -1257,6 +1258,7 @@ ol li {
   text-align: center;
   margin-top: 0;
   margin-bottom: 30px;
+  padding-top: 20px;
 }
 .Work-item {
   min-height: 1px;
