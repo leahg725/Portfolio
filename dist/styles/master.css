@@ -323,7 +323,7 @@
   padding: 10px 15px;
   font-size: 14px;
   border-radius: 5px;
-  border: 2px dashed #FF0000;
+  border: 2px solid #FF0000;
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
 }
@@ -902,7 +902,7 @@ th {
   padding: 10px 15px;
   font-size: 14px;
   border-radius: 5px;
-  border: 2px dashed #FF0000;
+  border: 2px solid #FF0000;
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
 }
@@ -999,6 +999,7 @@ th {
 .Resume-column_title_wrapper {
   text-align: center;
   color: #0C1713;
+  text-transform: uppercase;
 }
 .Resume-info_column {
   min-height: 1px;
@@ -1231,7 +1232,7 @@ ol li {
   font-weight: 700;
 }
 .Work-item_link:before {
-  background-color: rgba(255, 255, 255, 0.7);
+  background-color: rgba(255, 255, 255, 0.8);
   content: '';
   position: absolute;
   top: 0;

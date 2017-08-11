@@ -29,6 +29,6 @@ $(document).ready(function() {
             }
         }
     });
-
+    onScroll();
     $(document).on("scroll", onScroll);
 });
