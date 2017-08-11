@@ -998,8 +998,6 @@ th {
 }
 .Resume-column_title_wrapper {
   text-align: center;
-  color: #0C1713;
-  text-transform: uppercase;
 }
 .Resume-info_column {
   min-height: 1px;
@@ -1047,6 +1045,11 @@ th {
   margin-top: 0;
   margin-bottom: 5px;
 }
+@media (min-width: 768px) {
+  .Resume-info_heading {
+    font-size: 18px;
+  }
+}
 .Resume-info_subheading {
   margin: 0;
 }
@@ -1057,6 +1060,13 @@ th {
   font-weight: 700;
   margin: 0;
   font-size: 16px;
+  text-transform: uppercase;
+  color: #0C1713;
+}
+@media (min-width: 768px) {
+  .Resume-column_title {
+    font-size: 18px;
+  }
 }
 .Resume-highlight {
   font-style: italic;

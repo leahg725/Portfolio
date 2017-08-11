@@ -57,8 +57,6 @@
 
 .Resume-column_title_wrapper {
     text-align: center;
-    color: @black;
-    text-transform: uppercase;
 }
 
 .Resume-info_column {
@@ -88,6 +86,9 @@
     font-size: 16px;
     margin-top: 0;
     margin-bottom: 5px;
+    @media (min-width: @vp-sm) {
+        font-size: 18px;
+    }
 }
 
 .Resume-info_subheading {
@@ -102,6 +103,11 @@
     font-weight: @font-weight_bold;
     margin: 0;
     font-size: 16px;
+    text-transform: uppercase;
+    color: @black;
+    @media (min-width: @vp-sm) {
+        font-size: 18px;
+    }
 }
 
 .Resume-highlight {
